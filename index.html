@@ -1,0 +1,21 @@
+<!-- Firebot PWA 웹앱 (설치 가능하게 구성됨) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firebot 경로 설정</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e53935">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/809/809957.png" type="image/png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</head>
+<body>
+  <h1>Firebot 설치형 앱</h1>
+  <p>이 앱은 설치가 가능합니다. 홈 화면에 추가 버튼을 눌러 설치해보세요.</p>
+</body>
+</html>
